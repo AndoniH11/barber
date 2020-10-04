@@ -1,0 +1,825 @@
+/* FUENTES PERSONALIZADAS */
+
+@font-face{
+    font-family: "pacifico";
+    src: url(fonts/Pacifico-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "rye";
+    src: url(fonts/Rye-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CABECERA */
+#header{   
+    width: 100%;
+    height: 450px;
+    background-image: url(img/madera.jpg);
+    background-size: 110vw 50vw;
+    background-position: 0vw -20vw;
+}
+
+#cabecera{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+}
+
+.barber-icono{
+    width: 30px;
+}
+
+.burger-menu{
+    color: rgba(255, 255, 255, 0.945);
+    font-size: 35px;
+    margin-top: 8px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+    transition: all 500ms;
+}
+
+.burger-menu:hover{
+    font-size: 39px;
+    margin-top: 4px;
+    margin-left: 37px;
+}
+
+#menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-align: center;
+    margin-right: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+#menu li{
+    color: white;
+    font-weight: bold;
+    margin: 0 40px ;
+}
+#menu li {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 0px #444;
+    transition: all 300ms;
+}
+
+#menu li:hover{
+    text-shadow: 1px 1px 0px #444, 0px 0px 3px white;
+}
+
+#menu ul .link{
+    text-decoration: none;
+}
+
+#header #logo{
+    text-align: center;
+    align-self: center;
+    padding-top: 75px;
+}
+
+#header #logo img{
+    animation: Logo 1.5s;
+}
+
+@keyframes Logo{
+    0%{
+        width: 350px;
+    }
+
+    100%{
+        width: 212px;
+    }
+}
+/* INICIO DEL CONTENIDO */
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-color: rgb(250, 250, 250);
+    align-items: center;
+}
+
+#nosotros .texto{
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 20px;
+    text-align: justify;
+}
+#nosotros .texto .titulo{
+    display: flex;
+}
+
+#nosotros .texto .titulo:hover h2{
+    font-size: 50px;
+}
+
+#nosotros .texto .titulo:hover img{
+    width: 60px;
+    transition: all 300ms;
+}
+#nosotros .texto .titulo h2{
+    font-size: 44px;
+    transition: all 300ms;
+    font-family: "rye";
+    letter-spacing: 4px;
+}
+
+.icon-container{
+    font-size: 50px;
+}
+
+#nosotros .texto .titulo img{
+    width: 50px;
+    margin-top: -55px;
+    margin-left: 80px;
+}
+
+#nosotros .texto span{
+    font-weight: bold;
+}
+
+#nosotros .imagen img{
+    width: 35vw;
+    margin-right: 50px;
+}
+
+
+/* SERVICIOS */
+
+#servicios{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(img/background-services.jpg);
+    background-size: 1550px;
+    background-position-y: -150px;
+    color:white;
+}
+
+#servicios .titulo,
+#servicios .descripcion{
+    background-color: rgba(0, 0, 0, 0.863);;
+}
+
+#servicios .titulo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#servicios .titulo h2{
+    width: fit-content;
+    font-size: 46px;
+    text-align: center;
+    transition: all 300ms;
+    font-family: "rye";
+    letter-spacing: 4px;
+    margin: 0px auto;
+    padding: 0px 30px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #b6a688;
+    text-shadow: 0px 1px 1px #777;
+}
+
+#servicios .titulo:hover h2{
+    font-size: 54px;
+}
+
+#servicios .descripcion #cabello{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    align-items: center;
+}
+
+#servicios .descripcion h3{
+    width: 80%;
+    grid-column: 1/3;
+    margin: auto;
+    font-size: 30px;
+    border-bottom: 3px solid #b6a688;
+    text-shadow: 0px 1px 1px #777;
+    letter-spacing: 2px;
+}
+
+#servicios .descripcion #cabello h4{
+    font-size: 20px;
+}
+
+#servicios .descripcion #barba{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px repeat(2, 1fr);
+    margin-top: 40px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+#servicios #barba .servicio h4{
+    font-size: 20px;
+}
+
+#servicios .descripcion .servicio{
+    padding-left: 10vw;
+}
+
+#servicios .descripcion .precio{
+    text-align: right;
+    padding-right: 10vw;
+    font-size: 20px;
+    align-self: end;
+}
+/* GALERIA */
+
+#galeria{
+    background-color: rgb(250, 250, 250);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#galeria .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria .titulo:hover h2{
+    font-size: 52px;
+}
+
+#galeria .titulo:hover img{
+    width: 70px;
+}
+#galeria .titulo h2{
+    grid-column: 1/2;
+    text-align: right;
+    font-size: 46px;
+    transition: 300ms;
+    font-family: "rye";
+    letter-spacing: 4px;
+}
+
+#galeria .titulo img{
+    grid-column: 2/3;
+    width: 60px;
+    margin-left: 50px;
+    margin-top: -5px;
+    transition: 300ms;
+}
+#galeria #fotos{
+    display: grid;
+    grid-template-columns: repeat(5, 19vw);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 50px;
+}
+
+#galeria .cortes{
+    height: 24vw;
+    overflow: hidden;
+}
+
+#galeria .cortes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 500ms;
+}
+
+#galeria .cortes img:hover,
+#fotos #foto6:hover,
+#fotos #foto7:hover{
+    width: 115%;
+    height: 115%;
+    margin-top: -7.5%;
+    margin-left: -7.5%;
+}
+
+
+/* Contacto  */
+
+#contacto-container{
+    display: flex;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(img/background-services.jpg);
+    background-size: 130vw 135vh;
+    background-position: -10vw -35vh;
+    color: white;
+    justify-content: center;   
+    align-items: center;
+    padding: 100px 0px;
+}
+
+#contacto-contenido{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 60vw;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 5vw;
+}
+
+#contacto-contenido h2{
+    padding-top: 5vh;
+    font-family: 'rye';
+    width: 260px;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 4px;
+    border-bottom: 5px solid #b6a688;
+    text-shadow: 0px 1px 1px #777;
+    margin: auto;
+    animation: topToBottom 1.7s ease-in-out;
+}
+
+.contacto-divs{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.contacto-divs>div{
+    margin: auto;
+    margin-top: 4.5vw;
+    text-align: center;
+}
+
+.horario{
+    animation: contactos-animation 0.8s ease-in-out;
+}
+
+.telefono{
+    animation: contactos-animation 1s ease-in-out;
+}
+
+.email{
+    animation: contactos-animation 1.2s ease-in-out;
+}
+
+.localizacion{
+    animation: contactos-animation 1.4s ease-in-out;
+}
+.icon{
+    font-size: 4.3vw;
+    color: white;
+    text-align: center;
+}
+
+.contacto-div{
+    width: 80%;
+}
+.contacto-divs h3{
+    margin: 20px auto;
+    font-size: 1.8vw;
+    border-bottom: 2px solid #b6a688;
+    width: 85%;
+    padding-bottom: 2px;
+}
+
+.contacto-divs p{
+    font-size: 1.3vw;
+    overflow-wrap: break-word;
+}
+
+@keyframes topToBottom{
+    from{
+        transform: translateY(-40vh);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes contactos-animation{
+    from{
+        transform: translateY(-40vh);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+/* Reserva */
+
+.reserva-contenido{
+    animation: topToBottom 1.2s ease-in-out;
+}
+
+.reserva-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-info{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block;
+    width: 100%;
+}
+
+.SingleDatePicker{
+    outline: none;
+}
+
+.SingleDatePickerInput,
+input[type=text]{
+    width: 200px;
+    box-shadow: 3px 5px 8px #333;
+    height: 40px;
+    border: none;
+}
+
+input[type=text]{
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+}
+
+#date-picker{
+    width: 198px;
+}
+
+.reserva-button{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    margin-top: 50px;
+    transition: all 500ms;
+}
+
+.reserva-button:hover{
+    box-shadow: inset 10em 0 0 0 white;
+    color: black;
+}
+
+
+/* RESERVA COMPLETADA */
+
+.reserva-completada-container{
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 100;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(img/background-services.jpg);
+    background-size: 130vw 135vh;
+    background-position: -10vw -35vh;
+    display: flex;
+}
+
+.reserva-completada-contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.863);        width: 60vw;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserva-completada-contenido h2{
+    padding-top: 5vh;
+    font-family: 'rye';
+    width: fit-content;
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 4px;
+    border-bottom: 5px solid #b6a688;
+    text-shadow: 0px 1px 1px #777;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.reserva-completada-contenido p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERY */
+
+
+@media (max-width: 1508px){
+
+    #header{
+        background-position: 0px -15vw;
+    }
+    #nosotros .texto .titulo img{
+        margin-top: 0px;
+    }
+
+    #nosotros .texto .titulo{
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1329px){
+    #header{
+        background-position: 0px -12vw;
+    }
+    #servicios .descripcion .precio{
+        align-self: center;
+    }
+}
+
+@media (max-width: 1150px){
+
+    #header{   
+        background-position: 0vw 1vw;
+    }
+
+    #nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nosotros .texto .titulo img{
+        margin-top: -30px;
+    }
+
+    #nosotros .texto{
+        padding: 0px 15vw
+    }
+
+    #nosotros .imagen img{
+        width: 60vw;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .servicio-barba{
+        margin-top: 10px;
+    }
+
+    #contacto-contenido{
+        width: 75vw;
+    }
+
+    #contacto-contenido h2{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .contacto-divs{
+        grid-template-columns: repeat(2, 50%);
+        padding-bottom: 60px;
+    }
+
+    .icon-div .icon{
+        font-size: 45px;
+    }
+
+    .contacto-divs h3{
+        font-size: 24px;
+    }
+
+    .contacto-divs p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 887px){
+
+    #header{
+        background-size: 140vw 100vh;
+        background-position: -10vw -15vw;
+    }
+
+    #menu ul{
+        width: 100vw;
+        margin-right: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #menu ul .link{
+        width: 33%;
+    }
+    #nosotros .texto .titulo img{
+        margin-top: 0px;
+    }
+
+    #nosotros .imagen img{
+        width: 70vw;
+    }
+
+    .reserva-completada-contenido{
+        width: 80vw;
+    }
+
+    .reserva-completada-contenido h2{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 700px){
+
+    #header{   
+        background-position: 0vw -18vw;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    #menu ul{
+        background-color: rgb(34, 33, 33);
+        height: 100vh;
+        width: 70vw;
+        position: absolute;
+        top: 0;
+        display: block;
+        padding-top: 10vh;
+        padding-left: 5vw;
+        text-align: left;
+        font-size: 20px;
+        animation: leftToRight 1s;
+    }
+
+    .burger{
+        display: block;
+        color: white;
+        font-size: 40px;
+        margin-left: 2vw;
+        margin-top: -3vh;
+        margin-bottom: 8vh;
+        cursor: pointer;  
+        transition: all 500ms;
+        animation: leftToRight 1s;
+    }
+
+    .burger:hover{
+        font-size: 49px;
+        margin-top: -4vh;
+        margin-left: 1.5vw
+    }
+
+    #menu li{
+        margin-top: 3vh;
+        padding-left: 1vw;
+        animation: leftToRight 1s;
+    }
+
+    #menu li:hover{
+        padding-left: 10vw;
+        text-shadow: none;
+    }
+
+    .oculto{
+        display: none !important;
+    }
+
+    #servicios .titulo{
+        padding-bottom: 50px;
+    } 
+
+    #servicios .titulo h2{
+        font-size: 35px;
+    }
+
+    #servicios .titulo:hover h2{
+        font-size: 40px;
+    }
+
+    .reserva-completada-contenido h2{
+        font-size: 35px;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px){
+
+    #header{   
+        background-size: 160vw 100vh;
+        background-position: -59vw -15vw;
+    }
+
+    #nosotros .texto{
+        font-size: 16px;
+        width: 80vw;
+        padding: 0px;
+    }
+
+    #nosotros .icon-container{
+        margin-left: -45px;
+    }
+
+    #nosotros .texto .titulo h2{
+        font-size: 30px;
+    }
+
+    #nosotros .texto .titulo img{
+        width: 43px;
+        margin-top: -15px;
+        margin-left: 25px;
+    }
+
+    #nosotros .texto .titulo:hover h2{
+        font-size: 40px;
+    }
+    
+    #nosotros .texto .titulo:hover img{
+        width: 50px;
+    }
+
+    #servicios .titulo h2{
+        font-size: 26px;
+        padding: 0px;
+        padding-bottom: 10px;
+        width: 80%;
+    }
+
+    #galeria .titulo h2{
+        font-size: 30px;
+    }
+
+    #galeria .titulo img{
+        width: 40px;
+    }
+
+    #galeria .titulo:hover h2{
+        font-size: 38px;
+    }
+    
+    #galeria .titulo:hover img{
+        width: 50px;
+    }
+
+    .contacto-divs{
+        display: block;
+    }
+
+    .contacto-divs div{
+        margin-top: 70px;
+    }
+
+    #contacto-contenido{
+        width: 88vw;
+    }
+}
+
+@keyframes leftToRight{
+    from{
+        transform: translateX(-70vw);
+    }to{
+        transform: translateX(0)
+    }
+}
