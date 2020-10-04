@@ -572,8 +572,9 @@ input[type=text]{
 
 @media (max-width: 1150px){
 
-    #header{   
-        background-position: 0vw 1vw;
+    #header{
+        background-size: cover;
+        background-position: 0vw -6vw;
     }
 
     #nosotros{
